@@ -64,7 +64,7 @@ while True :
         x1,y1,x2,y2,ID = result
         x1,y1,x2,y2 = int(x1),int(y1),int(x2),int(y2)
         
-        cvzone.putTextRect(img , f"{ID}%" , (x1,y1-10),scale=1, thickness=2 ,offset=2)
+        cvzone.putTextRect(img , f"{ID}%" , (x1,y1-10),scale=2, thickness=2 ,offset=2)
     cv2.imshow("video" , img )
     # cv2.imshow("imgMask" , imgMask )
     if cv2.waitKey(0) & 0xFF ==ord('q') :
